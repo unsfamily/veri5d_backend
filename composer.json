@@ -18,8 +18,10 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
 
+
         "livewire/livewire": "^3.0",
         "razorpay/razorpay": "^2.9"
+
 
     },
     "require-dev": {

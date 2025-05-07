@@ -84,19 +84,4 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    // In User.php model
-    public function vendors()
-    {
-        return $this->hasMany(Vendor::class, 'user_id', 'id');
-    }
-
-    protected $casts = [
-        'address_1' => 'array',
-    ];
-    public function amount_received()
-    {
-        return $this->hasMany(user_payment_request::class, 'user_id', 'id');
-    }
-
-
 }
